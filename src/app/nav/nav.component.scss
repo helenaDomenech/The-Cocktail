@@ -1,0 +1,11 @@
+@import './src/sass/_variables';
+
+.tabs {
+    font-family: $roboto-slab;
+    .active {
+        div {
+            color: $dark-blue;
+            border-bottom: 1px solid $dark-blue;
+        }
+    }
+}

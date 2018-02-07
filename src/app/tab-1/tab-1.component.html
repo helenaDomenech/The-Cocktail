@@ -1,0 +1,16 @@
+
+<H1>HOTEL 
+  <span> Mieres del Camín Apartamentos</span>
+  <span class="star"></span>
+  <span class="star"></span>
+  <span class="star"></span>
+  <span class="star"></span>
+</H1>
+<ul class="servicesList">
+  <li class="service" *ngFor="let n of list" (click)="select(n)" [ngClass]="{active: isActive(n)}">
+    <h4 class="title">{{n}}</h4>
+    <ul>
+        <li *ngFor="let n of feature"></li>
+    </ul>
+  </li>
+</ul>
