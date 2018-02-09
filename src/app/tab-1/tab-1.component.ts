@@ -6,16 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tab-1.component.scss']
 })
 export class Tab1Component implements OnInit {
-  list:any;
-  selected :any;
+  list: any;
+  selected: any;
+  feature: any;
   constructor() { 
     this.list = [
-      'Sólo Alojamiento',
-      'Alojamiento y desayuno',
-      'Media Pensión',
-      'Todo Incluido',
-      'Unlimited Service'
-   ]; 
+      {
+        title:'Sólo Alojamiento', 
+        regimen: 'Botella de agua incluida' 
+      },
+      {
+        title:'Alojamiento + desayuno',
+        regimen: 'dormir'  
+      }
+    ]
+    this.feature = [
+        'Sin régimen'
+    ];
   }
   select(item) {
     this.selected = item; 

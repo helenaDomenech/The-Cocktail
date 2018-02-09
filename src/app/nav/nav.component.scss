@@ -2,8 +2,11 @@
 
 .tabs {
     font-family: $roboto-slab;
+    div {
+        color: $small-blue;
+    }
     .active {
-        div {
+        div{
             color: $dark-blue;
             border-bottom: 1px solid $dark-blue;
         }
