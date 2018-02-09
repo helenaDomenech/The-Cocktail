@@ -8,20 +8,53 @@ import { Component, OnInit } from '@angular/core';
 export class Tab1Component implements OnInit {
   list: any;
   selected: any;
-  feature: any;
   constructor() { 
     this.list = [
       {
         title:'Sólo Alojamiento', 
-        regimen: 'Botella de agua incluida' 
+        regimen: [
+          'Sin régimen',
+          'Botella de agua de bienvenida'
+        ] 
       },
       {
         title:'Alojamiento + desayuno',
-        regimen: 'dormir'  
+        regimen: [
+          'Desayuno buffet completo'
+        ]  
+      },
+      {
+        title:'Media Pensión',
+        regimen: [
+          'Desayuno buffet completo',
+          'Cena buffet',
+          'No incluye'
+        ]  
+      },
+      {
+        title:'Todo Incluido',
+        regimen: [
+          'Dispondrás de comida y bebida todo el día y durante toda tu estancia',
+          'Restaurante buffet',
+          'Snack bar',
+          'Servicio de bares (marcas nacionales)'
+        ]  
       }
-    ]
-    this.feature = [
-        'Sin régimen'
+      ,
+      {
+        title:'Unlimited Services',
+        regimen: [
+          'Restaurante buffet con bebidas premium',
+          'Restaurante a la carta (una cena por estancia)',
+          'Snack Bar con bebidas Premium',
+          'Minibar incluido',
+          'Acceso a SPA y 45 minutos de masaje por persona',
+          'Actividades deportivas (acuáticas sin motor)',
+          'Caja fuerte',
+          'Parking gratuito',
+          'Lavandería'
+        ]  
+      }
     ];
   }
   select(item) {

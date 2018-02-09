@@ -10,8 +10,8 @@
   <li class="service-element" *ngFor="let n of list" (click)="select(n)" [ngClass]="{active: isActive(n)}">
     <h4 class="service-title">{{n.title}}</h4>
     <ul  class="services-props">
-        <li class="props-title" *ngFor="let p of list">
-          <h5 class="service-title">{{p.regimen}}</h5>
+        <li class="props-title" *ngFor="let p of n.regimen">
+          <h5 class="props-title">{{p}}</h5>
         </li>
     </ul>
   </li>
