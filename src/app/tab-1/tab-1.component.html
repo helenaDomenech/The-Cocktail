@@ -1,0 +1,26 @@
+
+<H1>HOTEL 
+  <span> Mieres del Camín Apartamentos</span>
+  <span class="star"></span>
+  <span class="star"></span>
+  <span class="star"></span>
+  <span class="star"></span>
+</H1>
+<ul class="services-list"> 
+  <li class="service-element" *ngFor="let n of list" (click)="select(n)" [ngClass]="{active: isActive(n)}">
+    <h4 class="service-title">{{n.title}}</h4>
+    <ul  class="services-props">
+        <li class="props-title" *ngFor="let p of n.regimen">
+          <h5 class="props-title">{{p}}</h5>
+        </li>
+        <div class="select-service">
+            <label for="">
+                <input type="radio" name="selet" id="" value="">
+                Elegir régimen
+              </label>
+        </div>
+    </ul>
+  </li>
+
+  
+</ul>

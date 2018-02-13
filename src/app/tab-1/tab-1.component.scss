@@ -1,0 +1,153 @@
+
+@import './src/sass/_variables';
+h1 {
+    font-family: $roboto-slab;
+    color:$dark-blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    font-weight: normal;
+    font-size: 30px;
+    span {
+        margin-left: .3em;
+        margin-right: .3em;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .star:before {
+        content: "\2605";
+        color:$yellow;
+    }
+}
+.services-list {
+    display: flex;
+    padding: 0;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: space-around;
+    .service-element{
+        width: 20%;
+        list-style: none;
+        margin: 0 .3em;
+        background: $white;
+        min-height: 285px;
+        border:1px solid $light-blue;
+        h4 {
+            color:$medium-blue;
+            margin: 0;
+            text-align: center;
+            padding: 1em 2em; 
+        }
+        h4::after{
+            content: "";
+            display: block;
+            width: 2.5em;
+            margin: 1.5em  auto 0;
+            background-color: $light-blue;
+            transition: width 5s ease;
+            transition: background-color 3s ease;
+            transition: font-size 3s ease;
+            height: 2px; 
+        }
+    }
+    .active{
+        border: 1px solid $dark-blue;
+        h4{
+            font-size: 1.2em;
+        }
+        h4::after{
+            background-color: $dark-blue;
+            width: 4.5em;
+            font-size: 1.2em;
+        }
+    }
+    .services-props {
+        padding: 2em;
+        .props-title {
+            color:$extra-dark-blue;
+            margin: 0;
+            padding-bottom: .2em;
+        }
+        .select-service {
+            font-size: 0.83em;
+            padding: .5em;
+            background: $grey;
+            [type="radio"]:checked {
+                position: absolute;
+                left: -9999px;
+                + label {
+                    position: relative;
+                    padding-left: 28px;
+                    cursor: pointer;
+                    line-height: 20px;
+                    display: inline-block;
+                    color: #666;
+                }
+                + label:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 18px;
+                    height: 18px;
+                    border: 1px solid #ddd;
+                    border-radius: 100%;
+                    background: #fff;
+                }
+                + label:after {
+                    content: '';
+                    width: 12px;
+                    height: 12px;
+                    background: #F87DA9;
+                    position: absolute;
+                    top: 4px;
+                    left: 4px;
+                    border-radius: 100%;
+                    -webkit-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+                }
+                
+            }
+            [type="radio"] {
+                position: absolute;
+                left: -9999px;
+                + label{
+                    position: relative;
+                    padding-left: 28px;
+                    cursor: pointer;
+                    line-height: 20px;
+                    display: inline-block;
+                    color: #666;
+                }
+                + label:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 18px;
+                    height: 18px;
+                    border: 1px solid #ddd;
+                    border-radius: 100%;
+                    background: #fff;
+                }
+                + label:after {
+                    content: '';
+                    width: 12px;
+                    height: 12px;
+                    background: #F87DA9;
+                    position: absolute;
+                    top: 4px;
+                    left: 4px;
+                    border-radius: 100%;
+                    -webkit-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+                }
+            }
+        }
+        .select-service.active {
+            border:1px solid $dark-blue;
+        }
+    }
+}

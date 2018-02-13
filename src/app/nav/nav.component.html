@@ -1,0 +1,14 @@
+<div class="container">
+  <nav class="tabs">
+      <ul>
+        <li *ngFor="let n of tabs" (click)="changeTab(n)" [ngClass]="{active: isActive(n)}">
+          <div>{{n}}</div>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <app-tab-1  *ngIf="selected === 'Tabs 1'"></app-tab-1>
+      <app-tab-2  *ngIf="selected === 'Tabs 2'"></app-tab-2>
+    </main>
+</div>

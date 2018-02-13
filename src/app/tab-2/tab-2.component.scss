@@ -1,0 +1,133 @@
+@import './src/sass/_variables';
+
+.extra-services{
+    position: relative;
+    border:1px solid $border-color;
+    background: $white;
+    .bg-red {
+        background: red;
+        color: $white;
+        padding: .5em .2em;
+        position: absolute;
+        right: 0;
+        font-family: $roboto;
+        font-size: .9em;
+    }
+    li{
+        list-style: none;
+        a{
+            background-image: url("~/../src/assets/img/angle-down-blue.svg");
+            background-repeat: no-repeat;
+            background-position: 20px center;
+            color: #48a8f1;
+            display: block;
+            padding: 1em;
+            padding-left: 3em;
+            font-family: $roboto-slab;
+            text-decoration: none;
+            span {
+                padding-left: 1em;
+                font-size: .5em;
+            }
+        }
+        .card  {
+            border:1px solid $border-color;
+            background: $white;
+            margin: 1em;
+            .box-service {
+                background: $white;
+                padding: 1em;
+                h6 {
+                    margin: 0;
+                    color: $dark-blue;
+                    font-size: 24px;
+                    font-family: $roboto-slab;
+                }
+                P {
+                    color: $dark-grey;
+                    font-size: .9em;
+                }
+            }
+            footer {
+                -webkit-box-ordinal-group: 1;
+                -moz-box-ordinal-group: 1;
+                -webkit-order: 0;
+                -ms-flex-order: 0;
+                order: 0;
+                -webkit-box-flex: 1;
+                -moz-box-flex: 1;
+                -webkit-flex: 1 1 auto;
+                -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
+                -webkit-align-self: flex-end;
+                -ms-flex-item-align: end;
+                align-self: flex-end;
+                a {
+                    color:$small-blue;
+                }
+            }
+        }
+    } 
+}
+.flex-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    }
+
+.flex-item:nth-child(1) {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-box-flex: 0;
+    -moz-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+
+.flex-item:nth-child(2) {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1 0 0;
+    -ms-flex: 1 0 0;
+    flex: 1 0 0;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
