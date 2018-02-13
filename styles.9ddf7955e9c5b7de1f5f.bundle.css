@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab");
+/* You can add global styles to this file, and also import other style files */
+/*FONTS*/
+/*COLORS*/body{font-family:Roboto,sans-seriff;background:#f9f9f9;-webkit-box-sizing:border-box;box-sizing:border-box}body nav ul{background:#fff;border-bottom:1px solid #b8babc;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline;-ms-flex-line-pack:end;align-content:flex-end}body nav ul li{list-style:none}body nav ul li div{padding:1em;color:#59b0f2}
+/* Medium screens */@media (max-width:800px){nav{
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */-ms-flex-pack:distribute;justify-content:space-around}}
+/* Small screens */@media (max-width:500px){nav{
+    /* On small screens, we are no longer using row direction but column */-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}}
