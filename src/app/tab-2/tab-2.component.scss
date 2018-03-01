@@ -36,7 +36,8 @@
             margin: 1em;
             .box-service {
                 background: $white;
-                padding: 1em;
+                padding: .5em 1em 0;
+                
                 h6 {
                     margin: 0;
                     color: $dark-blue;
@@ -46,6 +47,24 @@
                 P {
                     color: $dark-grey;
                     font-size: .9em;
+                }
+                a {
+                    background-image: url("~/../src/assets/img/angle-down-blue.svg");
+                    background-repeat: no-repeat;
+                    background-position: right center;   
+                    padding-left: 0;
+                    width: 50%;
+                }
+                @media (max-width:1024px) {
+                    a {
+                        width: 90%;
+                    }
+                }
+            }
+            @media (max-width:1024px) {
+                .box-service {
+                    display: block;
+                    width: auto;
                 }
             }
             footer {
@@ -64,6 +83,69 @@
                 align-self: flex-end;
                 a {
                     color:$small-blue;
+                }
+                h6 {
+                    margin:.5em 0;
+                    padding-left:2.5em;
+                    font-size:1em;
+                    color:$dark-grey;
+                }
+                .ul {
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: flex;
+                
+                    -webkit-box-orient: horizontal;
+                    -moz-box-orient: horizontal;
+                    box-orient: horizontal;
+                
+                    -webkit-box-pack: end;
+                    -moz-box-pack: end;
+                    box-pack: end;
+                
+                    -webkit-box-direction: normal;
+                    -moz-box-direction: normal;
+                    box-direction: normal;
+                
+                    -webkit-box-align: stretch;
+                    -moz-box-align: stretch;
+                    box-align: stretch;
+                    
+                    > .li {
+                        padding-left: 2.5em;
+                        width: 30%;
+                        -webkit-box-ordinal-group: 1;
+                        -moz-box-ordinal-group: 1;
+                        box-ordinal-group: 1;
+
+                        -webkit-box-flex: 1;
+                        -moz-box-flex: 1;
+                        box-flex: 1;
+                        
+                        li {
+                            list-style: disc;   
+                            color: $dark-grey;
+                            font-size: .8em;
+                        }
+                    }
+                    @media (max-width:1024px) {
+                        > .li {
+                            width: 80%;
+                        }
+                    }
+                }
+                @media (max-width:1024px) {
+                    .ul {
+                        display: block;
+                    }
+                }
+                p {
+                    padding: 1em;
+                }
+            }
+            @media (max-width:1024px) {
+                section {
+                    padding: 1em;
                 }
             }
         }
@@ -130,4 +212,20 @@
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
+    width:65%;
     }
+    @media (max-width:425px) {
+        .bg-red {
+            display: none;
+        }
+    }
+    @media (max-width:1024px) {
+        .flex-container {
+            flex-direction: column;
+            img {
+                width: 100%;
+            }
+            
+        }
+    }
+    

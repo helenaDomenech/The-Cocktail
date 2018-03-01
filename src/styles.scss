@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'sass/_variables';
+@import '~pretty-checkbox/src/pretty-checkbox.scss';
 
 body {
     font-family: $roboto;
