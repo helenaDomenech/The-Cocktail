@@ -5,7 +5,7 @@
   },
   "apps": [
     {
-      "baseHref": "/the-cocktail",
+      "baseHref": "/the-cocktail/",
       "root": "src",
       "outDir": "dist",
       "assets": [
